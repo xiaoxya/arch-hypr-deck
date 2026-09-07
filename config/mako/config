@@ -1,0 +1,15 @@
+# ~/.config/mako/config — arch-hypr-deck
+font = JetBrainsMono Nerd Font 11
+background-color = #1e1e2edd
+text-color = #e6e9ef
+border-color = #a78bfa
+border-size = 2
+border-radius = 8
+padding = 12
+margin = 12
+default-timeout = 5000
+icon-location = left
+max-icon-size = 48
+sort = -time
+layer = overlay
+anchor = top-right

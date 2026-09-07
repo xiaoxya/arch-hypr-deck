@@ -1,0 +1,48 @@
+// ~/.config/rofi/config.rasi — arch-hypr-deck
+configuration {
+    modi: "drun,run,window";
+    show-icons: true;
+    icon-theme: "Papirus";
+    font: "JetBrainsMono Nerd Font 12";
+    display-drun: " 启动";
+    display-run: "⌘ 运行";
+    display-window: " 窗口";
+    drun-display-format: "{name}";
+    terminal: "kitty";
+}
+
+* {
+    bg: rgba(30, 30, 46, 92%);
+    fg: #e6e9ef;
+    accent: #a78bfa;
+    border-color: rgba(167, 139, 250, 40%);
+    background-color: transparent;
+    text-color: @fg;
+}
+
+window {
+    width: 640px;
+    border: 1px;
+    border-color: @border-color;
+    border-radius: 12px;
+    background-color: @bg;
+}
+
+listview {
+    lines: 8;
+    fixed-height: false;
+    scrollbar: false;
+}
+
+element selected {
+    background-color: @accent;
+    text-color: #1e1e2e;
+    border-radius: 8px;
+}
+
+inputbar {
+    padding: 10px;
+    margin: 8px;
+    border-radius: 8px;
+    background-color: rgba(69, 71, 90, 60%);
+}

@@ -1,0 +1,17 @@
+# ~/.config/matugen/config.toml — arch-hypr-deck
+# 从当前壁纸提取 Material You 配色并写入模板。
+
+[config]
+version = "1.0"
+
+[templates.kitty]
+input_path = '~/.config/matugen/templates/kitty-colors'
+output_path = '~/.config/kitty/colors.conf'
+
+[templates.waybar]
+input_path = '~/.config/matugen/templates/waybar-colors'
+output_path = '~/.config/waybar/colors.css'
+
+[templates.mako]
+input_path = '~/.config/matugen/templates/mako-colors'
+output_path = '~/.config/mako/config'

@@ -1,0 +1,17 @@
+/* waybar 默认配色（matugen 会覆盖 colors.css）*/
+:root {
+}
+
+@define-color bg rgba(30, 30, 46, 0.85);
+@define-color fg #e6e9ef;
+@define-color dim #7f849c;
+@define-color accent #a78bfa;
+@define-color border rgba(167, 139, 250, 0.35);
+@define-color warning #f9e2af;
+@define-color danger #f38ba8;
+
+.bg { background: @bg; }
+.fg { color: @fg; }
+.dim { color: @dim; }
+.accent { color: @accent; }
+.border { border-color: @border; }

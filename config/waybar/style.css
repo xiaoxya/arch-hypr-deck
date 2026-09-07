@@ -1,0 +1,30 @@
+@import "colors.css";
+
+* {
+    font-family: "JetBrainsMono Nerd Font", "Noto Sans CJK SC", sans-serif;
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: @bg;
+    color: @fg;
+    border-radius: 10px;
+    border: 1px solid @border;
+}
+
+#workspaces button {
+    padding: 0 6px;
+    color: @dim;
+    background: transparent;
+    border: none;
+}
+#workspaces button.active { color: @accent; }
+#workspaces button:hover { color: @fg; }
+
+#clock, #pulseaudio, #network, #cpu, #memory, #battery, #tray, #custom-notification {
+    padding: 0 10px;
+    color: @fg;
+}
+#battery.warning { color: @warning; }
+#battery.critical { color: @danger; }
