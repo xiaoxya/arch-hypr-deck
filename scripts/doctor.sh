@@ -32,7 +32,8 @@ done
 # 2. 配置文件
 echo "-- 配置文件"
 declare -A confs=(
-    [hyprland.conf]="$HOME/.config/hypr/hyprland.conf"
+    [hyprland.lua]="$HOME/.config/hypr/hyprland.lua"
+    [hypr/modules]="$HOME/.config/hypr/modules/keybinds.lua"
     [waybar]="$HOME/.config/waybar/config.jsonc"
     [kitty]="$HOME/.config/kitty/kitty.conf"
     [fish]="$HOME/.config/fish/config.fish"

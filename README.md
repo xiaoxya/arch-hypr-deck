@@ -34,6 +34,28 @@ cd arch-hypr-deck
 
 补齐的底层：pipewire 全家桶、NetworkManager+applet、polkit agent、xdg-desktop-portal（Hyprland 版 + GTK）、seatd、剪贴板（wl-clipboard/cliphist）、截图（grim+slurp+swappy）、亮度/音量控制、Qt Wayland 化、中文字体（noto-fonts-cjk）、Thunar 文件管理器、Firefox、mpv 等。
 
+## Hyprland 配置（0.56 Lua 格式）
+
+Hyprland 0.55 起弃用 hyprlang，改用 Lua（`~/.config/hypr/hyprland.lua`）。本项目已完整迁移，并按功能拆分为主配置 + 子配置：
+
+```
+~/.config/hypr/
+├── hyprland.lua            ← 主配置：只负责 require 装配
+├── vars.lua                ← 共享变量（常用程序、修饰键、脚本路径）
+└── modules/
+    ├── environment.lua     环境变量（fcitx5 输入法、Wayland 优先）
+    ├── monitors.lua        显示器
+    ├── appearance.lua      外观：间距/边框/圆角/模糊/动画/布局
+    ├── input.lua           键盘/触摸板/手势
+    ├── autostart.lua       自动启动（waybar/fcitx5/wallpaper 等）
+    ├── keybinds.lua        键位（Lua 循环生成工作区键位）
+    └── rules.lua           窗口/工作区规则
+```
+
+- 每个 `require()` 是独立作用域，单个子配置出错不影响其他文件加载
+- 改常用程序只需编辑 `vars.lua`
+- 语法基于官方 wiki 与 Hyprland 仓库 example/hyprland.lua
+
 ## 默认键位
 
 | 按键 | 功能 |
