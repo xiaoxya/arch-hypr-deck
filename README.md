@@ -79,7 +79,9 @@ Hyprland 0.55 起弃用 hyprlang，改用 Lua（`~/.config/hypr/hyprland.lua`）
 
 ## 中文输入（fcitx5 + rime）
 
-已预置 profile（首个输入法为 Rime）。进入桌面后用 `Ctrl+Space` 切换输入法；右键 fcitx5 托盘图标 → 配置，可添加更多方案（明月拼音等在 Rime 中按 `F4` 选择）。
+已预置：profile（Rime 为首个输入法）+ Rime 简体中文全局配置（`~/.local/share/fcitx5/rime/default.custom.yaml`，默认简体输出）。进入桌面后用 `Ctrl+Space` 切换输入法；Rime 内按 `F4` 选方案（朙月拼音等）；右键 fcitx5 托盘图标可配置。
+
+Electron 应用（QQ/微信/VS Code 等）和 Chromium 已通过 `electron-flags.conf` / `chromium-flags.conf` 启用 Wayland 输入法协议，无需手动传参。
 
 ## 注意事项
 

@@ -38,6 +38,7 @@ declare -A confs=(
     [kitty]="$HOME/.config/kitty/kitty.conf"
     [fish]="$HOME/.config/fish/config.fish"
     [fcitx5]="$HOME/.config/fcitx5/profile"
+    [rime简体配置]="$HOME/.local/share/fcitx5/rime/default.custom.yaml"
     [nvim]="$HOME/.config/nvim/init.lua"
     [mako]="$HOME/.config/mako/config"
     [rofi]="$HOME/.config/rofi/config.rasi"

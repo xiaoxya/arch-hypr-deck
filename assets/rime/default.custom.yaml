@@ -1,0 +1,16 @@
+# ~/.local/share/fcitx5/rime/default.custom.yaml
+# Rime 全局配置：默认简体中文输出
+# opencc 由 librime 依赖自动带入，无需单独安装
+patch:
+  switches:
+    - name: ascii_mode
+      reset: 0
+      states: [中文, 英文]
+    - name: full_shape
+      states: [半角, 全角]
+    - name: simplification
+      reset: 1          # 默认简体（0 为默认繁体）
+      states: [简体, 繁体]
+    - name: ascii_punct
+      states: [。，, ．，]
+  menu/page_size: 7     # 候选词数量

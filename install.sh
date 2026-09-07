@@ -136,6 +136,10 @@ deploy_configs() {
   mkdir -p "$HOME/Pictures/wallpapers"
   cp -n "$SCRIPT_DIR"/assets/wallpapers/* "$HOME/Pictures/wallpapers/" 2>/dev/null || true
 
+  # Rime 用户配置（注意：在 ~/.local/share 而非 ~/.config）
+  mkdir -p "$HOME/.local/share/fcitx5/rime"
+  cp -n "$SCRIPT_DIR"/assets/rime/* "$HOME/.local/share/fcitx5/rime/" 2>/dev/null || true
+
   # 用户脚本
   mkdir -p "$HOME/.local/bin"
   install -m 755 "$SCRIPT_DIR"/scripts/*.sh "$HOME/.local/bin/"
