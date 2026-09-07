@@ -93,6 +93,7 @@ cd arch-hypr-deck
 ```
 
 **改常用入口只动 `vars.lua`**；每个模块头部都有对应 wiki 链接。
+**子配置改法教程与可抄实例：[docs/MODULES.md](docs/MODULES.md)**
 
 ## 主题联动链路（matugen）
 
@@ -155,6 +156,8 @@ cd arch-hypr-deck
 
 ```
 arch-hypr-deck/
+├── docs/
+│   └── MODULES.md    modules/ 子配置教程与实例
 ├── install.sh        一键部署入口
 ├── config/           dotfiles（install.sh 负责映射到 ~/.config 等）
 ├── assets/
