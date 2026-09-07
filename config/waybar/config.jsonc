@@ -44,8 +44,8 @@
   "custom/notification": {
     "tooltip": false,
     "format": "{} ",
-    "exec": "swaync-client -swb || echo ''",
+    "exec": "n=$(makoctl list 2>/dev/null | jq -r '.data | length' 2>/dev/null); [ \"${n:-0}\" -gt 0 ] 2>/dev/null && echo \" $n\" || echo ''",
     "on-click": "makoctl dismiss -a",
-    "interval": 5
+    "interval": 3
   }
 }

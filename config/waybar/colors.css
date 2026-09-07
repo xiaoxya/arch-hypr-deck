@@ -1,7 +1,4 @@
 /* waybar 默认配色（matugen 会覆盖 colors.css）*/
-:root {
-}
-
 @define-color bg rgba(30, 30, 46, 0.85);
 @define-color fg #e6e9ef;
 @define-color dim #7f849c;
